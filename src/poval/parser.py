@@ -2,7 +2,7 @@ from importlib import resources
 
 from lark import Lark, Token, Transformer, v_args
 
-from polang.ast import (
+from poval.ast import (
     AllEqualExpr,
     AllExpr,
     AnyExpr,
@@ -35,7 +35,7 @@ def _unquote(token: Token) -> str:
 
 def _load_grammar() -> str:
     return (
-        resources.files("polang.grammar")
+        resources.files("poval.grammar")
         .joinpath("validation.avl.lark")
         .read_text(encoding="utf-8")
     )

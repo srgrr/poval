@@ -2,9 +2,9 @@ from dataclasses import dataclass
 
 import polars as pl
 
-from polang.ast import Rule
-from polang.evaluator import compile_rule
-from polang.parser import parse_avl
+from poval.ast import Rule
+from poval.evaluator import compile_rule
+from poval.parser import parse_avl
 
 
 @dataclass(frozen=True)
@@ -13,8 +13,8 @@ class LibraryRule:
     parsed: Rule
 
 
-class Polang:
-    """Code-first API for Polang."""
+class Poval:
+    """Code-first API for Poval."""
 
     @staticmethod
     def compile_violation_expression(avl_rules: list[str | Rule]) -> pl.Expr:

@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 import polars as pl
 
-from polang.ast import (
+from poval.ast import (
     AllEqualExpr,
     AllExpr,
     AnyExpr,

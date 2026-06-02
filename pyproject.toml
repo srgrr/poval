@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "polang"
+name = "poval"
 version = "0.1.0"
 description = "Minimal validation language and callable library API."
 readme = "README.md"
@@ -19,7 +19,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/polang"]
+packages = ["src/poval"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

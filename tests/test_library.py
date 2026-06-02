@@ -1,6 +1,6 @@
 import polars as pl
 
-from polang import Polang
+from poval import Poval
 
 
 RULE = """
@@ -21,7 +21,7 @@ def test_evaluate_returns_violations_per_rule() -> None:
         }
     )
 
-    violations = Polang.evaluate(df, [RULE])
+    violations = Poval.evaluate(df, [RULE])
 
     assert len(violations) == 1
     assert violations[0].height == 3
@@ -36,7 +36,7 @@ def test_compile_violation_expression() -> None:
         }
     )
 
-    expr = Polang.compile_violation_expression([RULE])
+    expr = Poval.compile_violation_expression([RULE])
     out = df.select(expr).unnest("rule_violations")
 
     assert out["rule_0_violates"].sum() == 3

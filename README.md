@@ -1,6 +1,6 @@
-# polang
+# poval
 
-`polang` is a small rule language and Python library for dataframe validation.
+`poval` is a small rule language and Python library for dataframe validation.
 You write rules in a readable DSL and evaluate them against Polars dataframes.
 
 The project provides:
@@ -8,7 +8,7 @@ The project provides:
 - A parser for the `WHEN` / `THEN` / `GROUP BY` rule format
 - A typed AST representation of rules
 - An evaluator that compiles rules into Polars expressions
-- A code-first API via `Polang`
+- A code-first API via `Poval`
 
 ## Install
 
@@ -48,7 +48,7 @@ Supported expressions:
 
 ```python
 import polars as pl
-from polang import Polang
+from poval import Poval
 
 rule = """
 WHEN
@@ -66,11 +66,11 @@ df = pl.DataFrame(
     }
 )
 
-violations = Polang.evaluate(df, [rule])
+violations = Poval.evaluate(df, [rule])
 print(violations[0])
 ```
 
 Main entrypoints:
 
-- `Polang.evaluate(df, rules)`: returns one dataframe of violating rows per rule
-- `Polang.compile_violation_expression(rules)`: returns a Polars struct expression with per-rule violation flags
+- `Poval.evaluate(df, rules)`: returns one dataframe of violating rows per rule
+- `Poval.compile_violation_expression(rules)`: returns a Polars struct expression with per-rule violation flags
