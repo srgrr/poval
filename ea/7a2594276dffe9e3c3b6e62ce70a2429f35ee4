@@ -1,0 +1,42 @@
+src/polang/__init__.py
+  s_1cc91e990ad96b::t_0b194cfdbffee8 3,6
+  s_1cc91e990ad96b::t_e6891e726b746a 1-2,4-5
+pyproject.toml
+  s_1cc91e990ad96b::t_595be8f29fecb9 1-5,7,9-21,23-26
+  s_1cc91e990ad96b::t_f934a041881f28 6,8,22
+src/polang/grammar/validation.avl.lark
+  s_1cc91e990ad96b::t_d968aa90595cba 1-66
+tests/test_library.py
+  s_1cc91e990ad96b::t_52323d36813fd2 1-2,4-23,25-38,40-42
+  s_1cc91e990ad96b::t_0b194cfdbffee8 3,24,39
+src/polang/ast.py
+  s_1cc91e990ad96b::t_214ba6523769b9 1-97
+src/polang/evaluator.py
+  s_1cc91e990ad96b::t_e7677d06ca10fd 1-114
+src/polang/parser.py
+  s_1cc91e990ad96b::t_16d21d5e650d79 1-122
+README.md
+  s_1cc91e990ad96b::t_60a9572dc3303f 3-4,6,8-11,19,30-35,38-45,47,72-76
+  s_1cc91e990ad96b::t_7f98dcb6e63958 1
+  s_1cc91e990ad96b::t_3ff5e121cba9ed 2,5,7,12-18,20-29,36-37,46,48-50,52-68,70-71
+  s_1cc91e990ad96b::t_0b194cfdbffee8 51,69
+src/polang/library.py
+  s_1cc91e990ad96b::t_54888206b0291e 1-15,17-47
+  s_1cc91e990ad96b::t_0b194cfdbffee8 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "ea7a2594276dffe9e3c3b6e62ce70a2429f35ee4",
+  "prompts": {},
+  "sessions": {
+    "s_1cc91e990ad96b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bd6e10ad-1115-43cc-a6af-70a25214d760",
+        "model": "default"
+      },
+      "human_author": "Sergio RG <sergio.guasch@archlet.ch>"
+    }
+  }
+}
