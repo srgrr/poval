@@ -1,0 +1,33 @@
+pyproject.toml
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 6,22
+.gitignore
+  s_1cc91e990ad96b::t_71850eb55ae9be 1-68
+src/poval/evaluator.py
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 1-114
+src/poval/parser.py
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 1-122
+src/poval/library.py
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 1-47
+README.md
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 1,3,11,51,69,75-76
+tests/test_library.py
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 3,24,39
+src/poval/__init__.py
+  s_1cc91e990ad96b::t_4854e5c8b37b2b 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "181f847c49980acd2f347f9010956fd20e629fe7",
+  "prompts": {},
+  "sessions": {
+    "s_1cc91e990ad96b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bd6e10ad-1115-43cc-a6af-70a25214d760",
+        "model": "default"
+      },
+      "human_author": "Sergio RG <sergio.guasch@archlet.ch>"
+    }
+  }
+}
