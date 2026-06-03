@@ -74,3 +74,14 @@ Main entrypoints:
 
 - `Poval.evaluate(df, rules)`: returns one dataframe of violating rows per rule
 - `Poval.compile_violation_expression(rules)`: returns a Polars struct expression with per-rule violation flags
+
+## Interactive notebook
+
+Explore rules with [marimo](https://marimo.io):
+
+```bash
+pip install -e ".[notebook]"
+marimo edit notebooks/poval_playground.py
+```
+
+The notebook includes a sample Polars dataframe (strings, numbers, nulls, groups) and lets you edit a rule, see violations, and inspect the compiled Polars expressions.

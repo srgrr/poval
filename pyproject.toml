@@ -17,6 +17,9 @@ dependencies = [
 dev = [
     "pytest>=8.0",
 ]
+notebook = [
+    "marimo>=0.11",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/poval"]

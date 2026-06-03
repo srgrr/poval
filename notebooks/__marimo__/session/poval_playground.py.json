@@ -1,0 +1,112 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.8",
+    "script_metadata_hash": "cba932caa0ec7d465570819e880f3d7a"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "c7bd7c524f65b249779a01204136ebe6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "660839a3a58483a3338f57a5d843dbba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "8e8872dfb0017ef820745cdf511eb08b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "de10b99c6ad2e94faac65e60922f2064",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"poval-playground\">Poval playground</h1>\n<span class=\"paragraph\">Edit the rule below. The notebook parses it, compiles <strong>WHEN</strong> / <strong>THEN</strong> to\nPolars expressions, shows violations, and prints the compiled expressions.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "bd478ab638d5eff1d68902d8375ca977",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='5098fd4c-b0e1-1ff4-5a3a-6fbb8ad90db0'><marimo-text-area data-initial-value='&quot;WHEN&#92;nCOL(origin) = &#92;&quot;Barcelona&#92;&quot;&#92;nTHEN&#92;nCOL(destination) != &#92;&quot;Barcelona&#92;&quot;&#92;nGROUP BY&#92;n&#92;&quot;item&#92;&quot;&#92;n&quot;' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003ePoval rule&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-placeholder='&quot;&quot;' data-disabled='false' data-debounce='true' data-full-width='true' data-rows='14'></marimo-text-area></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "a6a753b60b6770bdbe2e1f7b6d1b07da",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "c62ca89aa4e3b4852e42a5f1f2739444",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><div class=\"language-text highlight\"><pre><span></span><code>### Compiled Polars expressions\n\n```python\n# WHEN\n</code></pre></div>\n<span class=\"paragraph\">[(col(\"origin\")) == (\"Barcelona\")]</span>\n<h1 id=\"then\">THEN</h1>\n<span class=\"paragraph\">[(col(\"destination\")) != (\"Barcelona\")]</span>\n<h1 id=\"violation-mask-when-and-not-then\">Violation mask (WHEN and not THEN)</h1>\n<span class=\"paragraph\">[([(col(\"origin\")) == (\"Barcelona\")]) &amp; ([(col(\"destination\")) != (\"Barcelona\")].not())]</span>\n<h1 id=\"library-violation-expression\">Library violation expression</h1>\n<span class=\"paragraph\">as_struct([([(col(\"origin\")) == (\"Barcelona\")]) &amp; ([(col(\"destination\")) != (\"Barcelona\")].not())].alias(\"rule_0_violates\")).alias(\"rule_violations\")\n    ```</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "b5acfa93f94c8655a39fa4e4621a1bcb",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RQgR",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
